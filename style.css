@@ -1,40 +1,58 @@
 /* LAYOUT */
 
+html body {
+    padding: 0px;
+    margin: 0px;
+}
+
 nav {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
     height: 15vh;
+    background-image: linear-gradient(rgb(12, 142, 196), rgb(144, 37, 199));
+    padding: 0px;
+    margin: 0px;
 }
 
 .navLogo {
     height: 100%;
     width: auto;
+    border-radius: 50%;
 }
 
 .navLink {
     display: flex;
     flex-direction: row;
-    width: 30%;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 0%;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: -2vh;
+}
+
+.navLink a {
+    padding: 10px 20px;
+    background-color: rgb(12, 142, 196, 0.5);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 5%;
+    margin-right: 5%;
+    min-width: fit-content;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.navLink a:hover {
+    background-color: gray;
+    transition-duration: 1s;
 }
 
 .navLink li {
     list-style-type: none;
-    background-color: blue;
-    border-radius: 5px;
-    width: 30%;
-    height: 3em;
-    text-align: center;
-}
-
-.navLink a {
-    list-style-type: none;
-    background-color: blue;
-    border-radius: 5px;
-    width: 30%;
-    height: 3em;
-    text-align: center;
+    line-height: 2.5em;
 }
