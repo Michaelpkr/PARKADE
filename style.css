@@ -3,4 +3,69 @@
 html body {
     padding: 0px;
     margin: 0px;
+    background-color:#36454F;
 }
+
+.logo{
+    position: fixed;
+    top: 10;
+    left: 10;
+    width: 20vw;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* HAMBURGER NAV */
+
+#hamnav {
+    width: 100%;
+}
+
+  #hamitems { 
+    display: flex;
+}
+
+  #hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 15px;
+    color: rgb(114,188,101);
+    text-decoration: none;
+    text-align: right;
+}
+
+  #hamitems a:hover { 
+    font-weight: bolder;
+}
+
+ #hamitems a {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+   
+ #hamnav label { 
+    display: flex; 
+    color: rgb(114,188,101);
+    font-style: normal;
+    font-size: 3em;
+    padding: 10px;
+    justify-content: flex-end;
+    font-family: 'VT323', monospace;
+}
+  
+  #hamitems { 
+    display: none; 
+}
+
+  #hamnav input:checked ~ #hamitems { 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+ 
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+  
